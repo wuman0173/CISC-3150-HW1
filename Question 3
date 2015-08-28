@@ -1,1 +1,43 @@
+//Benjamin Wu
+//CISC 3150 - Fall 2015
+//HW1 - Question3
 
+//Comments. 
+//Tried to find class which consists of the calendar months and set it to the corresponding integer, but could not do it.
+//There should be a shorter way in doing this besides adding else ifs for each random number generated to month.
+
+import java.util.*;
+
+public class question3
+{
+	public static void main(String[] args)
+	{
+		Random rand = new Random();
+		int randomNumber = (rand.nextInt(12) + 1);
+		System.out.println(randomNumber);
+		if (randomNumber == 1)
+			System.out.println("January");
+		else if (randomNumber == 2)
+			System.out.println("February");
+		else if (randomNumber == 3)
+			System.out.println("March");
+		else if (randomNumber == 4)
+			System.out.println("April");
+		else if (randomNumber == 5)
+			System.out.println("May");
+		else if (randomNumber == 6)
+			System.out.println("June");
+		else if (randomNumber == 7)
+			System.out.println("July");
+		else if (randomNumber == 8)
+			System.out.println("August");
+		else if (randomNumber == 9)
+			System.out.println("September");
+		else if (randomNumber == 10)
+			System.out.println("October");
+		else if (randomNumber == 11)
+			System.out.println("November");
+		else if (randomNumber == 12)
+			System.out.println("December");
+	}
+}
