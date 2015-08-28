@@ -1,1 +1,24 @@
+//Benjamin Wu
+//CISC 3150 - Fall 2015
+//HW1 - Question2
 
+//Comments
+
+import java.math.*;
+import java.util.*;
+
+public class question2
+{
+	public static void main(String[] args)
+	{
+		System.out.println("Enter Radius to find Area");
+		Scanner radiusScanner = new Scanner(System.in);
+		while (radiusScanner.hasNext()){
+			double radius = radiusScanner.nextDouble();
+			double result = Math.PI*(Math.pow(radius,2.0));
+			System.out.println("Radius Entered: " + radius);
+			System.out.println("Area is: " + result);
+			System.out.println("Enter Radius to find Area");
+		}
+	}
+}
