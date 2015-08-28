@@ -3,6 +3,7 @@
 //HW1 - Question2
 
 //Comments
+//Currently, there is no quit option, just a crash which ends the program if entering anything other than a double.
 
 import java.math.*;
 import java.util.*;
