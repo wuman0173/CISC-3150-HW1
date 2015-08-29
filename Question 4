@@ -1,1 +1,35 @@
+//Benjamin Wu
+//CISC 3150 - Fall 2015
+//HW1 - Question4
 
+//Comments. 
+//BufferedReader imported from io to use to read in/out files.
+//Now I need to use command line redirection to print file on screen.
+//WOO it worked. had to use inputstreamreader (System.in)....
+//And on command line just do java question4 < TEXTFILEHERE .... Used NumberFeeder.txt to test out.
+
+import java.io.*;
+
+public class question4 
+{
+	public static void main(String[] args)
+	{
+		try
+		{
+			BufferedReader inLine = new BufferedReader(new InputStreamReader(System.in));
+			while(inLine.readLine() != null)
+			{
+				System.out.println(inLine.readLine());
+			}
+			inLine.close();
+		}
+		catch (FileNotFoundException ex)
+		{
+			System.out.println("File Not Found Exception");
+		}
+		catch (IOException ex)
+		{
+			System.out.println("IO Excception occured.");
+		}
+	}
+}
