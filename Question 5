@@ -1,1 +1,67 @@
+//Benjamin Wu
+//CISC 3150 - Fall 2015
+//HW1 - Question5
 
+//Comments. 
+//Had small difficulty in remembering to use math.pow
+//Could be more efficient.... Shorter....
+//Can try to use while (hasnextInt)...
+//I just concatenated each triangle creation to the output file.
+
+import java.awt.*;
+import java.util.*;
+import java.lang.Math.*;
+
+class question5 
+{
+	public static void main(String[] args) 
+	{
+		Scanner scan = new Scanner(System.in);
+
+		System.out.println("Enter Three 2D points to test if it is a triangle");
+
+		System.out.println("Enter X-Coordinate of Point A.");
+		int number1x = scan.nextInt();
+		System.out.println("Enter Y-Coordinate of Point A.");
+		int number1y = scan.nextInt();
+		Point point1 = new Point(number1x, number1y);
+
+		System.out.println("Enter X-Coordinate of Point B.");
+		int number2x = scan.nextInt();
+		System.out.println("Enter Y-Coordinate of Point B.");
+		int number2y = scan.nextInt();
+		Point point2 = new Point(number2x, number2y);
+
+		System.out.println("Enter X-Coordinate of Point C.");
+		int number3x = scan.nextInt();
+		System.out.println("Enter Y-Coordinate of Point C.");
+		int number3y = scan.nextInt();
+		Point point3 = new Point(number3x, number3y);
+
+		System.out.println("Your Points are: " + point1 + " " + point2 + " " + point3);
+
+		double distanceAB = Math.sqrt(Math.pow((number2x-number1x),2)+Math.pow((number2y-number1y),2));
+		double distanceBC = Math.sqrt(Math.pow((number3x-number2x),2)+Math.pow((number3y-number2y),2));
+		double distanceCA = Math.sqrt(Math.pow((number1x-number3x),2)+Math.pow((number1y-number3y),2));
+
+		double addLineABLineBC = distanceAB + distanceBC;
+		double addLineBCLineCA = distanceBC + distanceCA;
+		double addLineCALineAB = distanceCA + distanceAB;
+
+		System.out.println("distanceAB: " + distanceAB + " distanceBC: " + distanceBC + " distanceCA: " + distanceCA);
+		System.out.println("addLineABLineBC: " + addLineABLineBC + " addLineBCLineCA: " + addLineBCLineCA + " addLineCALineAB: " + addLineCALineAB);
+
+		if (addLineABLineBC <= distanceCA) {
+			System.out.println("THIS IS NOT A TRIANGLE");
+		}
+		else if (addLineBCLineCA <= distanceAB) {
+			System.out.println("THIS IS NOT A TRIANGLE");
+		}
+		else if (addLineCALineAB <= distanceBC) {
+			System.out.println("THIS IS NOT A TRIANGLE");
+    		}
+		else {
+			System.out.println("This is a triangle!");
+		}
+	}
+}
