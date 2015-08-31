@@ -1,1 +1,30 @@
+//Benjamin Wu
+//CISC 3150
+//HW1 - Question 6
 
+//Comments
+
+import java.util.*;
+
+class question6
+{
+	public static void main(String[] args)
+	{
+		Scanner scan = new Scanner(System.in);
+		
+		System.out.println("Enter X-Coordinate of First Circle");
+		int number1x = scan.nextInt();
+		System.out.println("Enter Y-Coordinate of First Circle");
+		int number1y = scan.nextInt();
+		System.out.println("Enter Radius of First Circle");
+		Double radius1 = scan.nextDouble();
+				
+		System.out.println("Enter X-Coordinate of Second Circle");
+		int number2x = scan.nextInt();
+		System.out.println("Enter Y-Coordinate of Second Circle");
+		int number2y = scan.nextInt();
+		System.out.println("Enter Radius of Second Circle");
+		Double radius2 = scan.nextDouble();
+	}
+
+}
