@@ -3,6 +3,10 @@
 //HW1 - Question 6
 
 //Comments
+//took me a while to figure out how to make the circles be determined..
+//If the 2 radii are equal to the distance between centers, they are touching... TRUE?
+//if the 2 radii is less than the distance between centers, they are not touching...
+//Now how do overlap and within each other... WORKING!
 
 import java.util.*;
 import java.awt.*;
@@ -28,6 +32,23 @@ class question6
 		System.out.println("Enter Radius of Second Circle");
 		Double radius2 = scan.nextDouble();
 		Point point2 = new Point(number2x, number2y);
+
+		Double distance = Math.sqrt(Math.pow((number2x-number1x),2)+Math.pow((number2y-number1y),2));
+		Double sumOfRadii = (radius1 + radius2);
+		
+		System.out.println("distance: " + distance);
+		System.out.println("Radii 1: " + radius1 + " Radii 2: " + radius2);
+		System.out.println("Sum of Radii: " + sumOfRadii);
+		//TESTING! == operator not good for some reason, used .equal()! WORKS!
+
+		if (distance > sumOfRadii)
+			System.out.println("Circles are not touching, overlapping, or in each other!");
+		else if (distance.equals(sumOfRadii))
+			System.out.println("Circles are touching at its edges!");
+		else if (distance < sumOfRadii && (distance < radius1 || distance < radius2))
+			System.out.println("Circles are WITHIN EACH OTHA!");
+		else if (distance < sumOfRadii)
+			System.out.println("Circles are overlapping, but not in each other");
 	}
 
 }
