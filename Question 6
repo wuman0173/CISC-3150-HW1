@@ -5,6 +5,7 @@
 //Comments
 
 import java.util.*;
+import java.awt.*;
 
 class question6
 {
@@ -18,6 +19,7 @@ class question6
 		int number1y = scan.nextInt();
 		System.out.println("Enter Radius of First Circle");
 		Double radius1 = scan.nextDouble();
+		Point point1 = new Point(number1x, number1y);
 				
 		System.out.println("Enter X-Coordinate of Second Circle");
 		int number2x = scan.nextInt();
@@ -25,6 +27,7 @@ class question6
 		int number2y = scan.nextInt();
 		System.out.println("Enter Radius of Second Circle");
 		Double radius2 = scan.nextDouble();
+		Point point2 = new Point(number2x, number2y);
 	}
 
 }
