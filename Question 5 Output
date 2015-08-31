@@ -1,0 +1,33 @@
+Enter Three 2D points to test if it is a triangle
+Enter X-Coordinate of Point A.
+Enter Y-Coordinate of Point A.
+Enter X-Coordinate of Point B.
+Enter Y-Coordinate of Point B.
+Enter X-Coordinate of Point C.
+Enter Y-Coordinate of Point C.
+Your Points are: java.awt.Point[x=0,y=0] java.awt.Point[x=0,y=2] java.awt.Point[x=3,y=0]
+distanceAB: 2.0 distanceBC: 3.605551275463989 distanceCA: 3.0
+addLineABLineBC: 5.60555127546399 addLineBCLineCA: 6.60555127546399 addLineCALineAB: 5.0
+This is a triangle!
+Enter Three 2D points to test if it is a triangle
+Enter X-Coordinate of Point A.
+Enter Y-Coordinate of Point A.
+Enter X-Coordinate of Point B.
+Enter Y-Coordinate of Point B.
+Enter X-Coordinate of Point C.
+Enter Y-Coordinate of Point C.
+Your Points are: java.awt.Point[x=3,y=6] java.awt.Point[x=3,y=8] java.awt.Point[x=6,y=8]
+distanceAB: 2.0 distanceBC: 3.0 distanceCA: 3.605551275463989
+addLineABLineBC: 5.0 addLineBCLineCA: 6.60555127546399 addLineCALineAB: 5.60555127546399
+This is a triangle!
+Enter Three 2D points to test if it is a triangle
+Enter X-Coordinate of Point A.
+Enter Y-Coordinate of Point A.
+Enter X-Coordinate of Point B.
+Enter Y-Coordinate of Point B.
+Enter X-Coordinate of Point C.
+Enter Y-Coordinate of Point C.
+Your Points are: java.awt.Point[x=0,y=1] java.awt.Point[x=0,y=3] java.awt.Point[x=0,y=7]
+distanceAB: 2.0 distanceBC: 4.0 distanceCA: 6.0
+addLineABLineBC: 6.0 addLineBCLineCA: 10.0 addLineCALineAB: 8.0
+THIS IS NOT A TRIANGLE
