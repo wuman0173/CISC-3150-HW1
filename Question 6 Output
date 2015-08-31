@@ -1,0 +1,40 @@
+Enter X-Coordinate of First Circle
+Enter Y-Coordinate of First Circle
+Enter Radius of First Circle
+Enter X-Coordinate of Second Circle
+Enter Y-Coordinate of Second Circle
+Enter Radius of Second Circle
+distance: 0.0
+Radii 1: 3.0 Radii 2: 5.0
+Sum of Radii: 8.0
+Circles are WITHIN EACH OTHA!
+Enter X-Coordinate of First Circle
+Enter Y-Coordinate of First Circle
+Enter Radius of First Circle
+Enter X-Coordinate of Second Circle
+Enter Y-Coordinate of Second Circle
+Enter Radius of Second Circle
+distance: 5.0
+Radii 1: 3.0 Radii 2: 2.0
+Sum of Radii: 5.0
+Circles are touching at its edges!
+Enter X-Coordinate of First Circle
+Enter Y-Coordinate of First Circle
+Enter Radius of First Circle
+Enter X-Coordinate of Second Circle
+Enter Y-Coordinate of Second Circle
+Enter Radius of Second Circle
+distance: 6.0
+Radii 1: 3.0 Radii 2: 4.0
+Sum of Radii: 7.0
+Circles are overlapping, but not in each other
+Enter X-Coordinate of First Circle
+Enter Y-Coordinate of First Circle
+Enter Radius of First Circle
+Enter X-Coordinate of Second Circle
+Enter Y-Coordinate of Second Circle
+Enter Radius of Second Circle
+distance: 9.0
+Radii 1: 3.0 Radii 2: 3.0
+Sum of Radii: 6.0
+Circles are not touching, overlapping, or in each other!
